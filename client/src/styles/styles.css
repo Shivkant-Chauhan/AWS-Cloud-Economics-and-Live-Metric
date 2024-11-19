@@ -1,0 +1,201 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    background-color: #282c34;
+    color: white;
+    padding: 10px;
+  }
+  
+  .navbar .logo {
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .dashboard {
+    padding: 20px;
+  }
+  
+  .cost-calculator,
+  .metrics-chart {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    /* padding: 10px 20px; */
+    /* background-color: #3b5998; */
+    /* color: white; */
+    /* border: none; */
+    /* cursor: pointer; */
+    padding: '8px 16px';
+    font-size: '14px';
+    background-color: '#3b5998';
+    color: '#fff';
+    border: 'none';
+    border-radius: '5px';
+    cursor: 'pointer';
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+
+.cloud-economics {
+    font-family: 'Roboto', sans-serif;
+    color: #2b2b2b;
+    background-color: #fcfcfc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.cloud-economics h1 {
+    text-align: left;
+    font-size: 24px;
+    color: #3b5998; /* Vibrant blue for the heading */
+    border-bottom: 3px solid #ffa500; /* Orange underline for contrast */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.cloud-economics h2 {
+    font-size: 20px;
+    color: #ff6f61; /* Coral color for subheadings */
+    margin: 20px 0 10px;
+    text-transform: uppercase;
+}
+
+.summary,
+.costs-breakdown {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.summary-item,
+.cost-item {
+    background-color: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    padding: 12px 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-item strong,
+.cost-item strong {
+    color: #2b2b2b;
+    font-weight: 600;
+}
+
+.summary-item span,
+.cost-item span {
+    color: #3b5998; /* Matches the heading color for consistency */
+    font-weight: 500;
+}
+
+.cost-item:nth-child(even),
+.summary-item:nth-child(even) {
+    background-color: #f0f4f8; /* Light grayish-blue for alternate rows */
+}
+
+.summary-item span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cloud-economics .summary-item span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffa500; /* Orange highlight for summary values */
+}
+
+.costs-breakdown {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .summary,
+    .costs-breakdown {
+        grid-template-columns: 1fr;
+    }
+}
+
+.profit-highlight {
+    background-color: #ffecc7;
+    border: 2px solid #ffa500;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profit-highlight strong {
+    font-size: 20px;
+    color: #2b2b2b;
+    display: block;
+}
+
+.profit-highlight span {
+    font-size: 28px;
+    font-weight: 700;
+    color: #8b3c00;
+    margin-top: 10px;
+    display: block;
+}
+
+/* .profit-highlight {
+    background-color: #f5f9ff;
+    border: 2px solid #007bff;
+    border-radius: 12px;
+    text-align: center;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 400px;
+    box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+}
+
+.profit-highlight strong {
+    font-size: 22px;
+    color: #1d3557;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.profit-highlight span {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff4500;
+    display: block;
+} */
+
+.app-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.loader-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.loader-container p {
+    font-size: 16px;
+    color: #555;
+}
